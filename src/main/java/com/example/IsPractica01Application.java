@@ -29,17 +29,11 @@ public class IsPractica01Application {
 	@ResponseBody
 	
 	public List<Alumno> alumnos1() {
-		//return repositorio.listar_n();
-		return repositorio.listar_p();
-		//return repositorio.listar_p();
+//		Listar por Nombre
+		return repositorio.listar_n();
+//		Listar por Apellido
+//		return repositorio.listar_a();
+//		Listar por Promedio
+//		return repositorio.listar_p();
 	}
-//   sorting
-	/*
-	Collections.sort(alumnos, new Comparator<Alumno>(){
-		@override
-		public int compare(Alumno alumno1,Alumno alumno2)
-		{
-			return alumno1.nombres.compareTo(alumno2.nombres);
-		}
-	});*/
 }
